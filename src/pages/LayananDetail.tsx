@@ -283,7 +283,7 @@ export default function LayananDetail() {
                       <FileText size={18} /> Request a Quote
                     </Link>
                     <a
-                      href={`https://wa.me/6281335147090?text=${encodeURIComponent(
+                      href={`https://wa.me/6281333751922?text=${encodeURIComponent(
                         `Halo hi.court, saya tertarik untuk berkonsultasi mengenai ${service.title}. Mohon info lebih lanjut.`
                       )}`}
                       target="_blank"

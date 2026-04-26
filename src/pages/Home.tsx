@@ -769,7 +769,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href={`https://wa.me/6281335147090?text=${encodeURIComponent("Halo hi.court, saya tertarik untuk berkonsultasi mengenai pembuatan lapangan olahraga. Mohon info lebih lanjut.")}`}
+                href={`https://wa.me/6281333751922?text=${encodeURIComponent("Halo hi.court, saya tertarik untuk berkonsultasi mengenai pembuatan lapangan olahraga. Mohon info lebih lanjut.")}`}
                 target="_blank"
                 rel="noreferrer"
                 className="px-8 py-4 bg-[#25D366] text-white font-bold uppercase tracking-[0.5px] text-[14px] rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-all hover:-translate-y-1 hover:bg-[#20BE5C] flex items-center justify-center gap-2"

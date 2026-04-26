@@ -38,7 +38,7 @@ export default function Kontak() {
     }
     textMessage += `Mohon info lebih lanjut. Terima kasih!`;
 
-    const whatsappUrl = `https://wa.me/6281335147090?text=${textMessage}`;
+    const whatsappUrl = `https://wa.me/6281333751922?text=${textMessage}`;
     window.open(whatsappUrl, "_blank");
   };
 
@@ -124,12 +124,12 @@ export default function Kontak() {
                     </h4>
                     <p className="text-[14px] text-ink/70 leading-[1.6]">
                       <a
-                        href="https://wa.me/6281335147090"
+                        href="https://wa.me/6281333751922"
                         target="_blank"
                         rel="noreferrer"
                         className="hover:text-primary transition-colors"
                       >
-                        +62 813-3514-7090
+                        +62 813-3375-1922
                       </a>
                       <br />
                       <span className="text-[12px] opacity-70">

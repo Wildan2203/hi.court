@@ -171,7 +171,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <a
-                  href="https://wa.me/6281335147090"
+                  href="https://wa.me/6281333751922"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-3 hover:text-primary transition-colors"
@@ -180,7 +180,7 @@ export default function Footer() {
                     className="text-[#25D366] flex-shrink-0"
                     size={18}
                   />
-                  <span>WhatsApp: +62 813-3514-7090</span>
+                  <span>WhatsApp: +62 813-3375-1922</span>
                 </a>
               </li>
             </ul>
