@@ -633,7 +633,7 @@ export default function Home() {
           cat: "Topik Hangat",
           minRead: "8 min",
           img: IMAGES.artikel1,
-          slug: "panduan-lengkap-membangun-gor-indoor-dari-nol",
+          slug: "panduan-lengkap-membangun-flexypave-dari-nol",
         },
       ].map((article, idx) => (
         <motion.div
