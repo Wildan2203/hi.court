@@ -226,7 +226,7 @@ const serviceData: Record<string, any> = {
   },
   volly: {
     title: "Pembuatan Lapangan Volly",
-    heroImg: IMAGES.layananDefault,
+    heroImg: IMAGES.layananVolly,
     description:
       "Kami spesialis pengerjaan lapangan bola volly profesional dengan standar PBVSI menggunakan material Flexypave berkualitas tinggi.",
     longDesc:
