@@ -585,104 +585,109 @@ export default function Home() {
       </section>
 
       {/* Artikel Snippet */}
-      <section className="py-24 bg-white border-b border-primary/10">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-            <div className="max-w-2xl">
-              <span className="text-secondary font-bold tracking-[1px] uppercase text-[12px] px-4 py-1.5 bg-secondary/10 rounded-full inline-block mb-4">
-                Edukasi Lapangan
-              </span>
-              <h2 className="text-3xl md:text-[40px] font-serif leading-[1.2] text-primary">
-                Artikel & Tips Kontraktor Olahraga
-              </h2>
-            </div>
-            <Link
-              to="/artikel"
-              className="flex items-center gap-2 text-primary text-[14px] font-bold uppercase tracking-[0.5px] hover:text-secondary transition-colors group"
-            >
-              Baca Blog Selengkapnya{" "}
-              <MoveRight
-                className="group-hover:translate-x-1 transition-transform"
-                size={18}
+     {/* Artikel Snippet */}
+<section className="py-24 bg-white border-b border-primary/10">
+  <div className="container mx-auto px-6 max-w-7xl">
+    <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+      <div className="max-w-2xl">
+        <span className="text-secondary font-bold tracking-[1px] uppercase text-[12px] px-4 py-1.5 bg-secondary/10 rounded-full inline-block mb-4">
+          Edukasi Lapangan
+        </span>
+        <h2 className="text-3xl md:text-[40px] font-serif leading-[1.2] text-primary">
+          Artikel & Tips Kontraktor Olahraga
+        </h2>
+      </div>
+      <Link
+        to="/artikel"
+        className="flex items-center gap-2 text-primary text-[14px] font-bold uppercase tracking-[0.5px] hover:text-secondary transition-colors group"
+      >
+        Baca Blog Selengkapnya{" "}
+        <MoveRight
+          className="group-hover:translate-x-1 transition-transform"
+          size={18}
+        />
+      </Link>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Kelebihan Lapangan Tenis Flexy Dibanding Standar",
+          date: "April 25, 2026",
+          cat: "Edukasi",
+          minRead: "4 min",
+          img: IMAGES.artikel2,
+          slug: "kelebihan-lapangan-tenis-flexy-dibanding-standar",
+        },
+        {
+          title: "Harga Lapangan Tenis Murah & Terjangkau hi.court",
+          date: "April 25, 2026",
+          cat: "Biaya",
+          minRead: "3 min",
+          img: IMAGES.artikel3,
+          slug: "cek-di-sini-harga-lapangan-tenis-murah-terjangkau",
+        },
+        {
+          title: "Panduan Lengkap Membangun GOR Indoor dari Nol",
+          date: "April 25, 2026",
+          cat: "Topik Hangat",
+          minRead: "8 min",
+          img: IMAGES.artikel1,
+          slug: "panduan-lengkap-membangun-gor-indoor-dari-nol",
+        },
+      ].map((article, idx) => (
+        <motion.div
+          key={idx}
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeIn}
+          viewport={{ once: true }}
+          transition={{ delay: idx * 0.1 }}
+          className="h-full" // Pastikan container luar mengambil tinggi penuh
+        >
+          <Link
+            to={`/artikel/${article.slug}`}
+            className="bg-card-bg rounded-[20px] overflow-hidden border border-primary/10 shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all group cursor-pointer flex flex-col h-full relative"
+          >
+            {/* Perbaikan: Menggunakan aspect-video dan object-cover yang fleksibel */}
+            <div className="relative aspect-video overflow-hidden bg-primary/5">
+              <LazyImage
+                src={article.img}
+                alt={`Artikel hi.court: ${article.title}`}
+                // Menentukan object-cover di sini karena LazyImage sudah "bersih"
+                className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 ease-in-out"
+                wrapperClassName="w-full h-full"
+                loading="lazy"
               />
-            </Link>
-          </div>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Kelebihan Lapangan Tenis Flexy Dibanding Standar",
-                date: "April 25, 2026",
-                cat: "Edukasi",
-                minRead: "4 min",
-                img: IMAGES.artikel2,
-                slug: "kelebihan-lapangan-tenis-flexy-dibanding-standar",
-              },
-              {
-                title: "Harga Lapangan Tenis Murah & Terjangkau hi.court",
-                date: "April 25, 2026",
-                cat: "Biaya",
-                minRead: "3 min",
-                img: IMAGES.artikel3,
-                slug: "cek-di-sini-harga-lapangan-tenis-murah-terjangkau",
-              },
-              {
-                title: "Panduan Lengkap Membangun GOR Indoor dari Nol",
-                date: "April 25, 2026",
-                cat: "Topik Hangat",
-                minRead: "8 min",
-                img: IMAGES.artikel1,
-                slug: "panduan-lengkap-membangun-gor-indoor-dari-nol",
-              },
-            ].map((article, idx) => (
-              <motion.div
-                key={idx}
-                initial="hidden"
-                whileInView="visible"
-                variants={fadeIn}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-              >
-                <Link
-                  to={`/artikel/${article.slug}`}
-                  className="bg-card-bg rounded-[20px] overflow-hidden border border-primary/10 shadow-soft hover:-translate-y-1 transition-all group cursor-pointer flex flex-col h-full relative"
-                >
-                  <div className="h-48 overflow-hidden relative">
-                    <LazyImage
-                      src={article.img}
-                      alt={`Artikel hi.court: ${article.title}`}
-                      className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover w-full h-full"
-                      wrapperClassName="w-full h-full absolute inset-0 z-10"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-6 flex-grow flex flex-col relative z-20">
-                    <span className="text-[11px] font-bold uppercase tracking-[1px] text-secondary mb-4 block px-[10px] py-[4px] bg-secondary/10 w-max rounded-full">
-                      {article.cat} • {article.date}
-                    </span>
-                    <h3 className="text-[18px] font-serif text-primary mb-6 group-hover:text-secondary transition-colors leading-[1.4] line-clamp-2">
-                      {article.title}
-                    </h3>
+            <div className="p-6 flex-grow flex flex-col relative z-20">
+              <span className="text-[11px] font-bold uppercase tracking-[1px] text-secondary mb-4 block px-[10px] py-[4px] bg-secondary/10 w-max rounded-full">
+                {article.cat} • {article.date}
+              </span>
+              <h3 className="text-[18px] font-serif text-primary mb-6 group-hover:text-secondary transition-colors leading-[1.4] line-clamp-2">
+                {article.title}
+              </h3>
 
-                    <div className="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
-                      <div className="flex items-center text-[13px] font-bold uppercase tracking-[0.5px] text-ink/50 group-hover:text-primary transition-colors">
-                        Baca Artikel{" "}
-                        <ArrowRight
-                          size={16}
-                          className="ml-2 group-hover:translate-x-1 transition-transform"
-                        />
-                      </div>
-                      <div className="flex items-center gap-1.5 text-ink/40 text-[13px] font-medium">
-                        <Clock size={14} /> {article.minRead}
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+              <div className="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
+                <div className="flex items-center text-[13px] font-bold uppercase tracking-[0.5px] text-ink/50 group-hover:text-primary transition-colors">
+                  Baca Artikel{" "}
+                  <ArrowRight
+                    size={16}
+                    className="ml-2 group-hover:translate-x-1 transition-transform"
+                  />
+                </div>
+                <div className="flex items-center gap-1.5 text-ink/40 text-[13px] font-medium">
+                  <Clock size={14} /> {article.minRead}
+                </div>
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* FAQ */}
       <section id="faq" className="py-24 bg-card-bg border-y border-primary/10">
