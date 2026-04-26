@@ -612,7 +612,7 @@ export default function Home() {
             {[
               {
                 title: "Kelebihan Lapangan Tenis Flexy Dibanding Standar",
-                date: "Okt 12, 2023",
+                date: "April 25, 2026",
                 cat: "Edukasi",
                 minRead: "4 min",
                 img: IMAGES.artikel2,
@@ -620,7 +620,7 @@ export default function Home() {
               },
               {
                 title: "Harga Lapangan Tenis Murah & Terjangkau hi.court",
-                date: "Sep 28, 2023",
+                date: "April 25, 2026",
                 cat: "Biaya",
                 minRead: "3 min",
                 img: IMAGES.artikel3,
@@ -628,7 +628,7 @@ export default function Home() {
               },
               {
                 title: "Panduan Lengkap Membangun GOR Indoor dari Nol",
-                date: "Nov 05, 2023",
+                date: "April 25, 2026",
                 cat: "Topik Hangat",
                 minRead: "8 min",
                 img: IMAGES.artikel1,
