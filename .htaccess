@@ -1,0 +1,8 @@
+# Blokir akses langsung ke file data JSON
+<Files "data.json">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Cegah directory listing
+Options -Indexes
