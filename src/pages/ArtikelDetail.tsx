@@ -161,7 +161,7 @@ const staticArticles: Record<string, any> = {
   img: IMAGES.artikel1,
   description:
     "Lapangan tenis bukan sekadar beton dilapisi cat. Pelajari sistem Flexy Pave dari dasar hingga finishing.",
-  relatedServiceSlug: "tennis",
+  relatedServiceSlug: "tenis",
   relatedServiceName: "Pembuatan Lapangan Tenis Flexy Pave",
   content: `Banyak orang mengira pembuatan lapangan tenis hanya sebatas membuat permukaan beton lalu melapisinya dengan cat. Padahal, untuk menghasilkan lapangan tenis dengan performa optimal, dibutuhkan sistem konstruksi berlapis seperti Flexy Pave yang dirancang untuk kenyamanan, keamanan, dan daya tahan jangka panjang.
 
